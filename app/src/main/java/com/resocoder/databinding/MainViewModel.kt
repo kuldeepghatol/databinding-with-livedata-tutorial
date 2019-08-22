@@ -24,7 +24,7 @@ class MainViewModel : ViewModel() {
         _displayedEditTextContent.value = editTextContent.value
     }
 
-    fun onSelectRandomEditTextFruit() {
+    fun onSelectRandomEditTextDay() {
         editTextContent.value = FakeRepository.getRandomFruitName()
     }
 }

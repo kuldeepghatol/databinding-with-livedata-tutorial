@@ -103,7 +103,7 @@
             android:layout_marginBottom="8dp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:text="Select random Day for EditText"
-            android:onClick="@{() -> viewmodel.onSelectRandomEditTextFruit()}"
+            android:onClick="@{() -> viewmodel.onSelectRandomEditTextDay()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.511"
