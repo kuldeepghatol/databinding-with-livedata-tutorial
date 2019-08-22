@@ -5,7 +5,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-
+/**
+ * Class MainViewModel
+ * Responsible for bindling
+ */
 class MainViewModel : ViewModel() {
 
     val currentRandomWeekday: LiveData<String>
