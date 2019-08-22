@@ -1,4 +1,5 @@
 package com.resocoder.databinding
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
@@ -8,10 +9,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.resocoder.databinding.databinding.ActivityMainBinding
 
-/**
- * Class MainActity
- * This is main class for application
- */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
