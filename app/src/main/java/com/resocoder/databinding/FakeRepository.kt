@@ -7,25 +7,25 @@ import java.util.*
 
 object FakeRepository {
 
-    private val fruitNames: List<String> = listOf(
-            "Apple", "Banana", "Orange", "Kiwi", "Grapes", "Fig",
-            "Pear", "Strawberry", "Gooseberry", "Raspberry"
+    private val weekdays: List<String> = listOf(
+            "Monday", "Tuesday", "Wenesday", "Thrusday", "Friday", "Saturday",
+            "Sunday"
     )
 
-    private val _currentRandomFruitName = MutableLiveData<String>()
-    val currentRandomFruitName: LiveData<String>
-        get() = _currentRandomFruitName
+    private val _currentRandomWeekday = MutableLiveData<String>()
+    val currentRandomWeekday: LiveData<String>
+        get() = _currentRandomWeekday
 
     init {
-        _currentRandomFruitName.value = fruitNames.first()
+        _currentRandomWeekday.value = weekdays.first()
     }
 
     fun getRandomFruitName(): String {
         val random = Random()
-        return fruitNames[random.nextInt(fruitNames.size)]
+        return weekdays[random.nextInt(weekdays.size)]
     }
 
     fun changeCurrentRandomFruitName() {
-        _currentRandomFruitName.value = getRandomFruitName()
+        _currentRandomWeekday.value = getRandomFruitName()
     }
 }

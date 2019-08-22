@@ -8,10 +8,10 @@ import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
 
-    val currentRandomFruitName: LiveData<String>
-        get() = FakeRepository.currentRandomFruitName
+    val currentRandomWeekday: LiveData<String>
+        get() = FakeRepository.currentRandomWeekday
 
-    fun onChangeRandomFruitClick() = FakeRepository.changeCurrentRandomFruitName()
+    fun onChangeRandomWeekdayClick() = FakeRepository.changeCurrentRandomFruitName()
 
     @Bindable
     val editTextContent = MutableLiveData<String>()
